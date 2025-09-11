@@ -5,13 +5,43 @@ import { Mini_Knight } from "../../public/models/Mini_knight";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { bentoSocialLinks } from "../constants";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  useGSAP(() => {
+    // animation for the card (web design, ux ui and quates)
+    gsap.from("#card", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top top",
+      },
+    });
+
+    // staggerd text animations
+
+    gsap.from(".animated-text", {
+      opacity: 0,
+      y: 20,
+      stagger: 0.15,
+      duration: 0.6,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top top",
+      },
+    });
+  }, []);
+
   return (
-    <section
-      id="about"
-      className="flex-center relative md:p-0 px-5 border border-red-500"
-    >
+    <section id="about" className="flex-center relative md:p-0 px-5">
       <GradientSpheres
         sphare1Class={"about-gradient-sphere about-sphere-1"}
         sphare2Class={"about-gradient-sphere about-sphere-2"}
@@ -64,7 +94,7 @@ function About() {
               </div>
             </div>
             {/* Web design card */}
-            <div className="md:col-span-6 col-span-12 row-span-3">
+            <div id="card" className="md:col-span-6 col-span-12 row-span-3">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col h-full justify-center gap-2">
                   <h1 className="gradient-title md:text-3xl text-2xl font-medium">
@@ -78,7 +108,7 @@ function About() {
               </div>
             </div>
             {/* UI/UX design card */}
-            <div className="md:col-span-6 col-span-12 row-span-3">
+            <div id="card" className="md:col-span-6 col-span-12 row-span-3">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col h-full justify-center gap-2">
                   <h1 className="gradient-title md:text-3xl text-2xl font-medium">
@@ -91,7 +121,7 @@ function About() {
               </div>
             </div>
             {/* moti card */}
-            <div className="md:col-span-4 col-span-12 row-span-4">
+            <div id="card" className="md:col-span-4 col-span-12 row-span-4">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col justify-between h-full">
                   {["BE YOURSELF", "BE DIFFERENT", "BUILD DIFFERENT"].map(
