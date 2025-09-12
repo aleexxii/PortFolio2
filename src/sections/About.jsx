@@ -51,7 +51,7 @@ function About() {
         <TitleHeader
           title={"About Me"}
           text={"Passionate Creator, Lifelong Learner"}
-          number={1}
+          number={'1'}
         />
 
         <div className="md:mt-20 mt-10">
