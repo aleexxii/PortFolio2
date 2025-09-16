@@ -1,6 +1,6 @@
 import { Text3D } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { ContactBoy } from "./Boy";
+import { ContactBoy } from "./ContactBoy";
 
 function ContactExperience() {
   return (
