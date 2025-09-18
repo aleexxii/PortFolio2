@@ -8,7 +8,7 @@ function Footer() {
             {
                 footerIconsList.map((icon, index) => (
                     <div key={index} className="cursor-pointer hover:translate-y-5 transition-all duration-700">
-                        <img src={icon.icon} alt={icon.name} className='md:size-10 size-8' />
+                        <img src={icon.icon} alt={icon.name} className='md:size-11 size-8' />
                     </div>
                 ))
             }

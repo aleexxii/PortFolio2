@@ -152,6 +152,5 @@ export {
   bentoSocialLinks,
   iconsList,
   slides,
-  testimonials,
   footerIconsList,
 };
