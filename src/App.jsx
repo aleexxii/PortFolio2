@@ -4,6 +4,7 @@ import About from "./sections/About";
 import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TechStack />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
