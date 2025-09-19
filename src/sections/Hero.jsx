@@ -31,7 +31,6 @@ function Hero() {
                 />
               </div>
               <div className="flex flex-col items-end">
-                <img src="images/shape.svg" alt="shape" />
                 <h1 className="font-bold md:text-9xl text-5xl">DEVELOPER</h1>
               </div>
             </div>
