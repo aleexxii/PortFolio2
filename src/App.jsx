@@ -5,10 +5,12 @@ import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div>
+      <Header />
       <Hero />
       <About />
       <TechStack />
