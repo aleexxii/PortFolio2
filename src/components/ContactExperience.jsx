@@ -13,21 +13,21 @@ function ContactExperience() {
       <directionalLight position={[-5, 5, 5]} intensity={5} color={"#1c34ff"} />
       <group>
         <Text3D
-          position={[-3, -3, 2]}
+          position={[-3, -2, -2]}
           curveSegments={32}
           bevelEnabled
           bevelSize={0.04}
           bevelThickness={0.01}
-          lineHeight={0.5}
+          lineHeight={0}
           letterSpacing={-0.06}
-          size={1.5}
+          size={1}
           font={"fonts/Inter_Bold.json"}
         >
-          {`Helloo`}
-          <meshDepthMaterial />
+          {`Thank you...`}
+          <meshNormalMaterial />
         </Text3D>
 
-        <ContactBoy scale={2.5} position={[0, -3, 0]} />
+        <ContactBoy scale={3} position={[0, -3, 0]} />
       </group>
     </Canvas>
   );

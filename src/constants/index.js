@@ -89,17 +89,17 @@ const iconsList = [
 const slides = [
   {
     id: 1,
-    title: "Sofi",
+    title: "Auth",
     img: "/images/p1.png",
   },
   {
     id: 2,
-    title: "Jasmina",
+    title: "Netflix",
     img: "/images/p2.png",
   },
   {
     id: 3,
-    title: "d.tampe",
+    title: "OLX",
     img: "/images/p3.png",
   },
   {
@@ -118,8 +118,8 @@ const slides = [
     img: "/images/p6.png",
   },
   {
-    id: 7,
-    title: "Sofi",
+    id: 1,
+    title: "Auth",
     img: "/images/p1.png",
   },
 ];
