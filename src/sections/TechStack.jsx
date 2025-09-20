@@ -1,11 +1,10 @@
-import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import { iconsList } from "../constants";
 import TechIcon from "../components/TechIcon";
 
 function TechStack() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full" id="testimonials">
       <div>
         <div className="container mx-auto md:p-0 px-5">
           <TitleHeader

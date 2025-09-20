@@ -42,7 +42,7 @@ function Header() {
               }}
               key={index}
               className='relative text-gray-800 dark:text-gray-200 hover:violet-600 dark:hover:text-violet-400 font-medium transition-colors duration-300 group'
-              href='#'
+              href={item.href}
             >
               {item.name}
               <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-violet-600 group-hover:w-full transition-all duration-300'></span>
@@ -137,7 +137,7 @@ function Header() {
             <a
               onClick={toggleMenu}
               key={index}
-              href='#'
+              href={item.href}
               className='text-gray-300 font-medium py-2'
             >
               {item.name}
