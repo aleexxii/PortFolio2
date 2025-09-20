@@ -1,4 +1,5 @@
 import { navItems } from "../constants";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 

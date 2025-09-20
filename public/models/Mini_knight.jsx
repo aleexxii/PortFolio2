@@ -11,9 +11,10 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function Mini_Knight(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('/models/mini_knight-transformed.glb')
+  const { scene, animations } = useGLTF('models/mini_knight-transformed.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
+  // eslint-disable-next-line no-unused-vars
   const { actions } = useAnimations(animations, group)
   
   return (
@@ -49,4 +50,4 @@ export function Mini_Knight(props) {
   )
 }
 
-useGLTF.preload('/models/mini_knight-transformed.glb')
+useGLTF.preload('models/mini_knight-transformed.glb')
