@@ -8,12 +8,12 @@ const navItems = [
     href: "#about",
   },
   {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
     name: "Testimonials",
     href: "#testimonials",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
   },
   {
     name: "Contact",
@@ -28,17 +28,17 @@ const bentoSocialLinks = [
   },
   {
     name: "Instagram",
-    href: "https://www.facebook.com/",
+    href: "https://www.instagram.com/aleexxii__",
     icon: "/images/insta.svg",
   },
   {
     name: "LinkedIn",
-    href: "https://www.facebook.com/",
+    href: "https://www.linkedin.com/in/i-am-rahul-p",
     icon: "/images/linkedin.svg",
   },
   {
     name: "WhatsApp",
-    href: "https://www.facebook.com/",
+    href: "https://wa.me/+919539742063",
     icon: "/images/whatsapp.svg",
   },
 ];
@@ -83,6 +83,18 @@ const iconsList = [
   {
     name: "aws",
     image: "/images/aws.svg",
+  },
+  {
+    name: 'nodeJS',
+    image: '/images/nodejs.png'
+  },
+  {
+    name: 'postgreSQL',
+    image: '/images/postgresql.png'
+  },
+  {
+    name: 'postman',
+    image: '/images/postman.png'
   },
 ];
 
@@ -132,17 +144,17 @@ const footerIconsList = [
   },
   {
     name: "Instagram",
-    href: "https://www.facebook.com/",
+    href: "https://www.instagram.com/aleexxii__",
     icon: "/images/b-insta.svg",
   },
   {
     name: "LinkedIn",
-    href: "https://www.facebook.com/",
+    href: "https://www.linkedin.com/in/i-am-rahul-p",
     icon: "/images/b-linked.svg",
   },
   {
     name: "WhatsApp",
-    href: "https://www.facebook.com/",
+    href: "https://wa.me/+919539742063",
     icon: "/images/b-whatsapp.svg",
   },
 ];

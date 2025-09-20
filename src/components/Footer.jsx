@@ -10,11 +10,13 @@ function Footer() {
             key={index}
             className="cursor-pointer hover:translate-y-5 transition-all duration-700"
           >
+            <a href={icon.href}>
             <img
               src={icon.icon}
               alt={icon.name}
               className="md:size-11 size-8"
             />
+            </a>
           </div>
         ))}
       </div>

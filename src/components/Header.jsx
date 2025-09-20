@@ -59,7 +59,7 @@ function Header() {
               delay: 0.8,
               duration: 0.8,
             }}
-            href='#'
+            href='https://github.com/aleexxii'
             className='text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300'
           >
             <FiGithub className='w-5 h-5' />
@@ -71,7 +71,7 @@ function Header() {
               delay: 0.8,
               duration: 0.8,
             }}
-            href='#'
+            href='https://www.linkedin.com/in/i-am-rahul-p'
             className='text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300'
           >
             <FiLinkedin className='w-5 h-5' />
@@ -91,20 +91,21 @@ function Header() {
         </div>
 
         {/* Hire Me Button */}
-
-        <motion.button
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            delay: 1.6,
-            duration: 0.8,
-            type: "spring",
-            damping: 15,
-          }}
-          className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 font-bold hover:from-violet-700 hover:to-purple-900 hover:text-white transition-all duration-500'
-        >
-          Hire Me
-        </motion.button>
+        <a href='#contact'>
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 1.6,
+              duration: 0.8,
+              type: "spring",
+              damping: 15,
+            }}
+            className='ml-4 px-4 py-2 rounded-xl bg-gradient-to-r from-gray-400 to-gray-100 text-violet-700 font-bold hover:from-violet-700 hover:to-purple-900 hover:text-white transition-all duration-500'
+          >
+            Hire Me
+          </motion.button>
+        </a>
 
         {/* Mobile Menu Button */}
         <div className='md:hidden flex-center'>
@@ -147,24 +148,26 @@ function Header() {
 
         <div className='pt-4 border-t border-gray-200 dark:border-gray-700'>
           <div className='flex space-x-5'>
-            <a href=''>
+            <a href='https://www.linkedin.com/in/i-am-rahul-p'>
               <FiLinkedin className='h-5 w-5 text-gray-300' />
             </a>
-            <a href=''>
+            <a href='https://github.com/aleexxii'>
               <FiGithub className='h-5 w-5 text-gray-300' />
             </a>
             <a href=''>
               <FiTwitter className='h-5 w-5 text-gray-300' />
             </a>
           </div>
-          <button
-            onClick={() => {
-              toggleMenu();
-            }}
-            className='mt-4 block w-full px-4 py-2 text-white rounded-lg bg-gradient-to-r from-pink-900 to-violet-950 font-bold'
-          >
-            Contact Me
-          </button>
+          <a href='#contact'>
+            <button
+              onClick={() => {
+                toggleMenu();
+              }}
+              className='mt-4 block w-full px-4 py-2 text-white rounded-lg bg-gradient-to-r from-pink-900 to-violet-950 font-bold'
+            >
+              Contact Me
+            </button>
+          </a>
         </div>
       </motion.div>
     </header>
