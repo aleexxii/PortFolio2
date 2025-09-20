@@ -9,7 +9,7 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className='sticky top-0 w-full z-50 transition-all duration-300'>
+    <header className='absolute w-full z-50 transition-all duration-300'>
       <div className='container h-16 md:h-20 mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between'>
         {/* Logo/Name */}
         <motion.div
