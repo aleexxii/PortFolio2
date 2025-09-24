@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { slides } from "../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

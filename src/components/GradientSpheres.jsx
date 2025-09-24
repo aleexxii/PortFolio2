@@ -1,4 +1,3 @@
-import React from 'react'
 
 function GradientSpheres({sphare1Class, sphare2Class}) {
   return (

@@ -1,11 +1,10 @@
-import React from 'react'
 
-function TechIcon({icon}) {
+function TechIcon({ icon }) {
   return (
     <div className='md:w-32 md:h-32 w-20 h-20 bg-black flex flex-center gradient-border hover:-translate-y-3 transition-all duration-700 marquee-item flex-none'>
-        <img src={icon.image} alt={icon.name} className='md:size-16 size-10'/>
+      <img src={icon.image} alt={icon.name} className='md:size-16 size-10' />
     </div>
-  )
+  );
 }
 
-export default TechIcon
+export default TechIcon;

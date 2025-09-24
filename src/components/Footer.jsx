@@ -1,4 +1,3 @@
-import React from "react";
 import { footerIconsList } from "../constants";
 
 function Footer() {

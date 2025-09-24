@@ -1,4 +1,3 @@
-import React from "react";
 import GradientSpheres from "../components/GradientSpheres";
 import HeroExperience from "../components/HeroExperience";
 
